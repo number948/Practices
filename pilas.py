@@ -1,5 +1,5 @@
 class Pila:
-    def __init__(self):
+    def __init__(self, elementos):
         self.elementos = []
         
     def push(self, elemento):
@@ -28,9 +28,10 @@ class Pila:
                 pila.push(int(token))
         return pila.pop()
                 
-p = Pila() 
 
-print(evalPostfijo("56 47 + 2 *"))
+p = Pila("56 47 + 2 *")
+
+p.evalPostfijo(p)
   
     
     
